@@ -1,0 +1,108 @@
+#watermark-preview-container {
+    border: 1px solid #ccc;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#alignment-map {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+}
+
+.region {
+    position: absolute;
+    border: 1px solid transparent;
+}
+
+#region-highlight {
+    border: 1px dashed #7dfff8;
+}
+
+.region[data-region="top_left"],
+.region[data-region="top_middle"],
+.region[data-region="top_right"],
+.region[data-region="middle_left"],
+.region[data-region="center"],
+.region[data-region="middle_right"],
+.region[data-region="bottom_left"],
+.region[data-region="bottom_middle"],
+.region[data-region="bottom_right"],
+.region[data-region="contain"] {
+    border: 1px solid transparent;
+}
+
+.region[data-region="top_left"] {
+    top: 0;
+    left: 0;
+    width: 33.33%;
+    height: 33.33%;
+}
+
+.region[data-region="top_middle"] {
+    top: 0;
+    left: 33.33%;
+    width: 33.33%;
+    height: 33.33%;
+}
+
+.region[data-region="top_right"] {
+    top: 0;
+    left: 66.66%;
+    width: 33.33%;
+    height: 33.33%;
+}
+
+.region[data-region="middle_left"] {
+    top: 33.33%;
+    left: 0;
+    width: 33.33%;
+    height: 33.33%;
+}
+
+.region[data-region="center"] {
+    top: 33.33%;
+    left: 33.33%;
+    width: 33.33%;
+    height: 33.33%;
+}
+
+.region[data-region="middle_right"] {
+    top: 33.33%;
+    left: 66.66%;
+    width: 33.33%;
+    height: 33.33%;
+}
+
+.region[data-region="bottom_left"] {
+    top: 66.66%;
+    left: 0;
+    width: 33.33%;
+    height: 33.33%;
+}
+
+.region[data-region="bottom_middle"] {
+    top: 66.66%;
+    left: 33.33%;
+    width: 33.33%;
+    height: 33.33%;
+}
+
+.region[data-region="bottom_right"] {
+    top: 66.66%;
+    left: 66.66%;
+    width: 33.33%;
+    height: 33.33%;
+}
+
+.region[data-region="contain"] {
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+}
